@@ -16,7 +16,6 @@ function checkForPIP() {
 		} catch (e) {}
 	}
 	if (arp_spoofed) {
-		console.log('You have been ARP Spoofed');
 		var html = `
             <style>
                 .arp_alert{

@@ -1,8 +1,4 @@
-console.log('background');
-
 chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
-	console.log(request);
-	console.log(sender);
 	if (request) {
 		chrome.browserAction.setPopup({
 			tabId: sender.tab.id,
